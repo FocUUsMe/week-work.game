@@ -3,14 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="website icon" type="png" href="./img/website-icon.png">
         <link rel="stylesheet" href="./style/style.css">
         <script src="./src/script.js" defer></script>
         <title>Rock, scissors, paper</title>
     </head>
     <body>
-        <div class="main-menu">             <!--Главное меню-->
+        <div class="main-menu">      <!--Главное меню-->
             <h1>ROCK, SCISSORS, PAPER!</h1>    
             <button id="start_btn">НАЧАТЬ ИГРУ</button>  
+        </div>
+
+        <div class="main-game">     <!--Игра-->
+            <div class="player" id="enemy"> <!--Бот-->
+                <div> <img src="./assets/question-mark.png" alt=""> </div>
+                <div> <img src="./assets/question-mark.png" alt=""> </div>
+                <div> <img src="./assets/question-mark.png" alt=""> </div>
+            </div>
+            <div class="player" id="main-player">    <!--Сам игрок-->
+                <div> <img src="./assets/rock.png" alt=""> </div>
+                <div> <img src="./assets/paper.png" alt=""> </div>
+                <div> <img src="./assets/scissors.png" alt=""> </div>
+            </div>
         </div>
 
 

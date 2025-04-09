@@ -19,6 +19,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         font-family: var(--main-font);
+        overflow: hidden;
     }
 
     .main-menu{
@@ -31,10 +32,6 @@
         gap: 35px;  
         transition: all 1s ease-out;
 
-            & h1{
-                animation: moving 5s linear infinite;
-            }
-
             & button{
                 width: 200px;
                 height: 40px;
@@ -45,6 +42,7 @@
                 font-family: var(--secondly-font);
                 font-weight: bold;
                 background: linear-gradient(120deg, rgb(8, 167, 48), rgb(202, 199, 47));
+                animation: moving 5s linear infinite;
 
                     &:hover{
                         width: 250px;
@@ -52,9 +50,50 @@
             }
     }
 
+    .main-game{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 1s ease;
+        opacity: 0;
+    }
+
+    .player{
+        width: 800px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+            & div{
+                width: 150px;
+                height: 150px;
+                border-radius: 15px;
+                cursor: pointer;
+                background-color: wheat;
+                box-shadow: 0px 0px 10px black;
+                text-align: center;
+                align-content: center;
+                transition: all .4s ease;
+
+                    &:hover{
+                        transform: translateY(-20px);
+                    }
+
+                    & img{
+                        width: 90px;
+                        height: 90px;
+                    }
+            }
+    }
 
 
-    @keyframes moving{   /*Анимация для h1*/
+
+    @keyframes moving{   /*Анимация для кнопки*/
         0%{
             transform: translateY(0);
         }
