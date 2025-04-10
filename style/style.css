@@ -91,13 +91,6 @@
             }
     }
 
-    #enemy div{
-        cursor: default !important;
-            &:hover{
-                transform: translateY(0) !important;
-            }
-    }
-
 
 
     @keyframes moving{   /*Анимация для кнопки*/
