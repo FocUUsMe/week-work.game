@@ -19,25 +19,3 @@ let something = ['./assets/paper.png','./assets/rock.png','./assets/scissors.png
         mainMenu.style.display = 'none';
         mainGame.style.opacity = '1';
     });
-    
-    function handlePick(){
-     let random = Math.floor(Math.random() * something.length )   
-     console.log(random)
-    bot.src = something[random];
-    }
-    function handlePick1(){
-        let random = Math.floor(Math.random() * something.length )   
-        console.log(random)
-       bot1.src = something[random];
-    }
-    function handlePick2(){
-        let random = Math.floor(Math.random() * something.length )   
-        console.log(random)
-       bot2.src = something[random];
-    }
-
-
-    btn.addEventListener('click', handlePick)
-    btn1.addEventListener('click', handlePick1)
-    btn2.addEventListener('click', handlePick2)
-    
